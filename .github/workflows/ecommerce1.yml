@@ -4,7 +4,7 @@ name: Website Deployment e-commerce 1
 on:
   # Triggers the workflow every 15 minutes
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/200 * * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
