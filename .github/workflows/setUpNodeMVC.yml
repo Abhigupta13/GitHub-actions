@@ -17,4 +17,4 @@ jobs:
       # Step 2: Run the npx command with automated inputs
       - name: Run automated npx set-up-node-mvc
         run: |
-          echo -e "src\nJavaScript" | npx set-up-node-mvc
+          echo -e "src\n\n" | npx set-up-node-mvc
