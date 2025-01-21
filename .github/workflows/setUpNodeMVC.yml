@@ -2,20 +2,16 @@ name: Run npx set-up-node-mvc Hourly
 
 on:
   schedule:
-    # Runs the workflow every hour
     - cron: '0 * * * *'
 
 jobs:
   run-npx-command:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Specify the Node.js version
+          node-version: '18'
 
-      - name: Run npx command
-        run: npx set-up-node-mvc
+      - name: Run automated npx command
+        run: echo "src\nJavaScript" | npx set-up-node-mvc
